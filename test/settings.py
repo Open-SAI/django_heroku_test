@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'test.urls'
@@ -77,14 +80,20 @@ WSGI_APPLICATION = 'test.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
 #        'ENGINE': 'django.db.backends.mysql',
 #        'NAME': 'testdb',
 #        'USER': 'root',
 #        'PASSWORD': '123456',
 #        'HOST': '127.0.0.1',
 #        'PORT': '3306'        
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sql5426050',
+        'USER': 'sql5426050',
+        'PASSWORD': '8wqebLN8iC',
+        'HOST': 'sql5.freesqldatabase.com',
+        'PORT': '3306',
     }
 }
 
