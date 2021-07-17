@@ -91,12 +91,26 @@ DATABASES = {
 #        'PASSWORD': '123456',
 #        'HOST': '127.0.0.1',
 #        'PORT': '3306'        
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql5426050',
-        'USER': 'sql5426050',
-        'PASSWORD': '8wqebLN8iC',
-        'HOST': 'sql5.freesqldatabase.com',
+#        'ENGINE': 'django.db.backends.mysql',
+#        'ENGINE': 'mysql.connector.django',
+#        'NAME': 'sql5426050',
+#        'USER': 'sql5426050',
+#        'PASSWORD': '8wqebLN8iC',
+#        'HOST': 'sql5.freesqldatabase.com',
+#        'PORT': '3306',        
+
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'djangocrud',
+        'USER': 'djangocrud',
+        'PASSWORD': 'DCbd6S6sx7AuX4F',
+        'HOST': '45.79.185.79',
         'PORT': '3306',
+
+#        'OPTIONS': {
+#            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+#            'sql_mode': 'traditional',
+#            'autocommit': True,                
+#            }
     }
 }
 
