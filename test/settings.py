@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gj)9pegd^c_+go1nh^%y94yd)6&2s&z)(+lq@8=i4a2kxmj5i=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangotest-12-07-21.herokuapp.com']
+ALLOWED_HOSTS = ['djangotest-12-07-21.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'concepto.apps.ConceptoConfig',
 ]
 
 MIDDLEWARE = [    
@@ -158,6 +159,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
-    'djangotest-12-07-21.herokuapp.com'
+    'https://djangotest-12-07-21.herokuapp.com'
 )
 
