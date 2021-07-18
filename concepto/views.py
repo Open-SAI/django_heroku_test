@@ -16,7 +16,7 @@ def concepto_detail(request, pk):
     try: 
         concepto = Concepto.objects.get(pk=pk) 
     except Concepto.DoesNotExist: 
-        return JsonResponse({'message': 'The tutorial does not exist'}, status=status.HTTP_404_NOT_FOUND) 
+        return JsonResponse({'message': 'El concepto noooooo existe'}, status=status.HTTP_404_NOT_FOUND) 
  
     # GET / PUT / DELETE tutorial
     if request.method == 'GET':
