@@ -49,7 +49,7 @@ def concepto_list(request):
         conceptos = Concepto.objects.all()
         
         titulo = request.GET.get('titulo', None)
-        if title is not None:
+        if titulo is not None:
             conceptos = conceptos.filter(titulo__contains=titulo)
         
         conceptos_serializer = ConceptoSerializer(conceptos, many=True)
