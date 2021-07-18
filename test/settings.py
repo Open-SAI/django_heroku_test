@@ -99,11 +99,18 @@ DATABASES = {
 #        'HOST': 'sql5.freesqldatabase.com',
 #        'PORT': '3306',        
 
+#        'ENGINE': 'mysql.connector.django',
+#        'NAME': 'djangocrud',
+#        'USER': 'djangocrud',
+#        'PASSWORD': 'DCbd6S6sx7AuX4F',
+#        'HOST': '45.79.185.79',
+#        'PORT': '3306',
+
         'ENGINE': 'mysql.connector.django',
         'NAME': 'djangocrud',
         'USER': 'djangocrud',
         'PASSWORD': 'DCbd6S6sx7AuX4F',
-        'HOST': '45.79.185.79',
+        'HOST': 'djangocrud.ceu2jjrrj7mc.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
 
 #        'OPTIONS': {
