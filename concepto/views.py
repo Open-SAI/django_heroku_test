@@ -32,7 +32,7 @@ def concepto_detail(request, pk):
     elif request.method == 'DELETE':
         concepto.delete()
 #        return JsonResponse({"message": "Tutorial was deleted successfully!"}, status=status.HTTP_204_NO_CONTENT)
-        return JsonResponse({"message": "Tutorial was deleted successfully!"}, safe=False)
+        return JsonResponse({'message': 'Tutorial was deleted successfully!'}, safe=False)
     
 @api_view(['GET'])
 def concepto_list_published(request):
