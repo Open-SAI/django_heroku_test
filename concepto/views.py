@@ -31,7 +31,8 @@ def concepto_detail(request, pk):
         return JsonResponse(concepto_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     elif request.method == 'DELETE':
         concepto.delete()
-        return JsonResponse({'message': 'Tutorial was deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
+#        return JsonResponse({"message": "Tutorial was deleted successfully!"}, status=status.HTTP_204_NO_CONTENT)
+        return JsonResponse({"message": "Tutorial was deleted successfully!"}, safe=False)
     
 @api_view(['GET'])
 def concepto_list_published(request):
