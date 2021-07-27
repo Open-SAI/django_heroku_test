@@ -147,9 +147,11 @@ DATABASES['default'].update(db_from_env)
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
-    'https://djangotest-12-07-21.herokuapp.com'
+    'https://djangotest-12-07-21.herokuapp.com',
+    'https://open-sai.github.io'
 )
 
